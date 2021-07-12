@@ -42,12 +42,8 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8099/eureka/
-
 management:
-  security:
-    enabled: false 
   endpoints:
     web:
       exposure:
-        include: hystrix.stream
-      base-path: /
+        include: "*"
